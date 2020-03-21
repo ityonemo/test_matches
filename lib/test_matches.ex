@@ -1,18 +1,7 @@
 defmodule TestMatches do
-  @moduledoc """
-  Documentation for `TestMatches`.
-  """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> TestMatches.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  defmacro m do
+    quote do
+      {:ok, m} when is_integer(m)
+    end
   end
 end
